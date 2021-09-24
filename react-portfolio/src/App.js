@@ -1,11 +1,18 @@
 import './App.css';
+import myPhoto from './assets/myPhoto.png'
 
 function App() {
+
+  const helloText = ['Hi', 'Bora']
+
   return (
     <div className="App">
-      <header></header>
 
       <section className="black">
+        <div className="photoWrap">
+          <img src={myPhoto} alt="" />
+          
+        </div>
         <h1>Nice Curves</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quaerat adipisci id at minus. Pariatur exercitationem adipisci perspiciatis qui atque eaque quas recusandae reiciendis, quam ut assumenda dolorem mollitia iste.</p>
 
