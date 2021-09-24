@@ -31,13 +31,32 @@ section {
   flex-direction: column;
   align-items: center;
   min-height: 400px;
-  padding: 100px 20vw;
+  padding: 70px 20vw;
 }
 
 /* Header Section */
 
 .black {
   background: #12130f;
+}
+
+.black h1 {
+  font-size: 4vmin;
+}
+
+.iconsWrapper {
+  position: relative;
+  display: flex;
+}
+
+.iconsWrapper img {
+  margin: 0 .05vmin 0 0.5vmin;
+  max-width: 7vmin;
+  max-height: 7vmin;
+}
+
+.iconsWrapper img:hover {
+  transform: scale(1.1);
 }
 
 .headerWave {
@@ -62,7 +81,7 @@ section {
 
 .photoWrap {
   position: relative;
-  max-width: 10vw;
+  max-width: 13vw;
 }
 
 .photoWrap img {

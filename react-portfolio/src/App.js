@@ -1,9 +1,11 @@
 import './App.css';
 import myPhoto from './assets/myPhoto.png'
+import githubIcon from './assets/gitHubIcon.png'
+import emailIcon from './assets/emailIcon.png'
+import linkedinIcon from './assets/linkedinIcon.png'
+
 
 function App() {
-
-  const helloText = ['Hi', 'Bora']
 
   return (
     <div className="App">
@@ -11,17 +13,26 @@ function App() {
       <section className="black">
         <div className="photoWrap">
           <img src={myPhoto} alt="" />
-          
         </div>
-        <h1>Nice Curves</h1>
+        <div className="iconsWrapper">
+          <a href="https://www.linkedin.com/in/nathan-dias-silva/" target="_blank"><img src={linkedinIcon} alt="" /></a>
+          <a href="https://github.com/PacSmack" target="_blank"><img src={githubIcon} alt="" /></a>
+          <a href="mailto: nathandsbr@gmail.com" target="_blank"><img src={emailIcon} alt="" /></a>
+        </div>
+
+        <h1>Hello, my name is Nathan da Silva.<br />
+          I am a Full-Stack Web Developer living in Mesa, AZ.
+        </h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quaerat adipisci id at minus. Pariatur exercitationem adipisci perspiciatis qui atque eaque quas recusandae reiciendis, quam ut assumenda dolorem mollitia iste.</p>
 
       </section>
+
+
       <section className="blue">
         <h1>Nice Curves</h1>
         <p>Quam, consectetur tempore ipsa ex officiis culpa eaque, sequi perferendis nam itaque quis aut blanditiis laboriosam exercitationem. Minima consectetur excepturi quaerat natus, accusantium neque iusto labore? Et enim officia quae!</p>
 
-        <div class="headerWave">
+        <div className="headerWave">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
           </svg>
