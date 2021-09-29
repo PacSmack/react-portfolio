@@ -2,8 +2,8 @@ import './App.css';
 
 import Header from './components/HeaderComponent'
 import About from './components/AboutComponent'
-
-
+import Projects from './components/ProjectsComponent'
+import Technologies from './components/TechnologiesComponent'
 
 
 function App() {
@@ -12,15 +12,10 @@ function App() {
     <div className="App">
       <Header />
       <About />
+      <Projects />
+      <Technologies />
 
-      <section className="spanishBlue">
-        <h1>Nice Curves</h1>
-        <p>A, minima delectus? Necessitatibus tempora sequi laborum eos placeat deleniti, laudantium atque labore saepe maxime, hic, repudiandae perspiciatis minus autem beatae. Et, quo deleniti fugit a accusamus distinctio sequi quasi?</p>
-      </section>
-      <section className="russianGreen">
-        <h1>Nice Curves</h1>
-        <p>Quis recusandae dolores aspernatur tenetur libero sapiente, enim vel tempora molestiae molestias blanditiis eligendi alias dignissimos harum. Dolor in eius, possimus itaque ut, magnam voluptates veritatis excepturi dolore rem velit!</p>
-      </section>
+      
       <section className="emerald">
         <h1>Nice Curves</h1>
         <p>Vero sunt eaque dicta eius aspernatur cupiditate fugiat autem dolorem? Ullam obcaecati quae, rerum perferendis, est quisquam quam porro temporibus dolores enim unde pariatur omnis facilis commodi asperiores libero ea.</p>

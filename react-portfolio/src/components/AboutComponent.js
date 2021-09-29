@@ -6,8 +6,7 @@ export default function About() {
     return (
         <section className="blue">
 
-            <h1>Nice Curves</h1>
-            <p>Quam, consectetur tempore ipsa ex officiis culpa eaque, sequi perferendis nam itaque quis aut blanditiis laboriosam exercitationem. Minima consectetur excepturi quaerat natus, accusantium neque iusto labore? Et enim officia quae!</p>
+            <h1>About</h1>
 
             <div className="headerWave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
