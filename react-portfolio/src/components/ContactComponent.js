@@ -1,8 +1,42 @@
+import emailIcon from '../assets/emailIcon.png'
 
 export default function Contact() {
+
+
     return (
         <section className="contact">
-            <h1>Contact</h1>
+            <h1>Let's Connect!</h1>
+
+            <div className="contactWrapper">
+                <div className="contactItem">
+                    <a href="mailto: nathandsbr@gmail.com" target="_blank">
+                        <div>
+                            <h2>Email me!</h2>
+                            <img src={emailIcon} alt="" />
+                        </div>
+                    </a>
+                </div>
+
+                <div className="contactItem">
+                    <a href="mailto: nathandsbr@gmail.com" target="_blank">
+                        <div>
+                            <h2>Check out my resume!</h2>
+                            <img src={emailIcon} alt="" />
+                        </div>
+                    </a>
+                </div>
+
+                <div className="contactItem">
+                    <a href="mailto: nathandsbr@gmail.com" target="_blank">
+                        <div>
+                            <h2>Get in touch on Linkedin!</h2>
+                            <img src={emailIcon} alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
 
             <div class="custom-shape-divider-top-1632964461">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

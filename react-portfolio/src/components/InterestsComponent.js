@@ -5,6 +5,47 @@ export default function Interests() {
     return (
         <section className="interests">
             <h1>Interests</h1>
+            <container className="cardsContainer">
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src="https://via.placeholder.com/225x225" />
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Spoken Languages</h1>
+                            <p>English</p>
+                            <p>Portuguese</p>
+                            <p>Spanish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src="https://via.placeholder.com/225x225" />
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Sports</h1>
+                            <p>Volleyball</p>
+                            <p>Soccer</p>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src="https://via.placeholder.com/225x225" />
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>Entertainment</h1>
+                            <p>Anime</p>
+                            <p>Music Concerts</p>
+                        </div>
+                    </div>
+                </div>                
+            </container>
 
             <div class="custom-shape-divider-top-1632964461">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

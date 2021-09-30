@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: 'Scheherazade New', serif;
   color: white;
-  background: #7e8185;
+  background: #121417;
   overflow-x: hidden;
 }
 
@@ -133,14 +133,115 @@ section {
   background: #121417;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.6vw;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.6vw;
+  }
+}
+
 /* Interests Section */
 
 .interests {
   background: #121417;
 }
 
-.contact {
-  background: #121417;
+/* Cards */
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.6vw;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 225px;
+  height: 225px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 900px) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 70%);
+    grid-gap: 0.6vw;
+  }
+  .flip-card {
+    width: 325px;
+    height: 325px;
+  }
+}
+
+/* Contact Section */
+
+.contactWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 00.6vw;
+}
+
+.contactItem {
+  background: #724E91;
+  padding: 1vw;  
+}
+
+.contactItem:hover {
+  background: #806499;
+  padding: 1vw;
+  
+}
+
+.contactItem a {
+  text-decoration: none;
+  color: white;
 }
 
 .custom-shape-divider-bottom-1632964970 {
