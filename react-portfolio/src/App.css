@@ -15,7 +15,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
+  min-height: 43vh;
   padding: 70px 20vw;
 }
 
@@ -119,6 +119,12 @@ section {
 
 .projectImgWrapper img {
   margin: 0.3vw;
+}
+
+@media (max-width: 900px) {
+  .projectImgWrapper {
+    display: contents;
+  }
 }
 
 /* Technologies Section */
