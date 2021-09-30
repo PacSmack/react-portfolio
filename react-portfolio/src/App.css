@@ -2,21 +2,6 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
   margin: 0;
   font-family: 'Scheherazade New', serif;
@@ -34,13 +19,56 @@ section {
   padding: 70px 20vw;
 }
 
-/* Header Section */
+/* Page Marks */
 
-.black {
-  background: #12130f;
+.custom-shape-divider-top-1632964461 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-.black h1 {
+.custom-shape-divider-top-1632964461 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1632964461 .shape-fill {
+  fill: #724E91;
+}
+
+.custom-shape-divider-bottom-1632964777 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1632964777 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1632964777 .shape-fill {
+  fill: #724E91;
+}
+
+/* Header Section */
+
+.header {
+  background: #121417;
+}
+
+.header h1 {
   font-size: 4vmin;
 }
 
@@ -59,26 +87,6 @@ section {
   transform: scale(1.1);
 }
 
-.headerWave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.headerWave svg {
-  position: relative;
-  display: block;
-  width: calc(135% + 1.3px);
-  height: 130px;
-}
-
-.headerWave .shape-fill {
-  fill: #12130F;
-}
-
 .photoWrap {
   position: relative;
   max-width: 13vw;
@@ -93,32 +101,59 @@ section {
   -moz-border-radius: 50%;
 }
 
-/* Techonologies section */
+/* About section */
 
-.blue {
-  background: #1789FC;
+.about {
+  background: #121417;
 }
 
-.spanishBlue {
-  background: #296EB4;
+/* Projects Section */
+
+.projects {
+  background: #121417;
 }
 
-.russianGreen {
-  background: #519872;
+.projectImgWrapper {
+  display: flex;
 }
 
-.emerald {
-  background: #5B9279;
+.projectImgWrapper img {
+  margin: 0.3vw;
 }
 
-.honeyYellow {
-  background: #FDB833;
+/* Technologies Section */
+
+.technologies {
+  background: #121417;
 }
 
-.yellowCrayola {
-  background: #FFD07B;
+/* Interests Section */
+
+.interests {
+  background: #121417;
 }
 
-.gold {
-  background: #B1740F;
+.contact {
+  background: #121417;
+}
+
+.custom-shape-divider-bottom-1632964970 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1632964970 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 225px;
+}
+
+.custom-shape-divider-bottom-1632964970 .shape-fill {
+  fill: #724E91;
 }
