@@ -1,5 +1,10 @@
 import emailIcon from '../assets/emailIcon.png'
 
+import linkedinIcon from '../assets/linkedinIcon.png';
+import resumeIcon from '../assets/resume.png';
+
+import resumePdf from '../assets/Resume.pdf';
+
 export default function Contact() {
 
 
@@ -18,19 +23,19 @@ export default function Contact() {
                 </div>
 
                 <div className="contactItem">
-                    <a href="mailto: nathandsbr@gmail.com" target="_blank">
+                    <a href={resumePdf} target="_blank">
                         <div>
                             <h2>Check out my resume!</h2>
-                            <img src={emailIcon} alt="" />
+                            <img src={resumeIcon} alt="" />
                         </div>
                     </a>
                 </div>
 
                 <div className="contactItem">
-                    <a href="mailto: nathandsbr@gmail.com" target="_blank">
+                    <a href="https://www.linkedin.com/in/nathan-dias-silva/" target="_blank">
                         <div>
                             <h2>Get in touch on Linkedin!</h2>
-                            <img src={emailIcon} alt="" />
+                            <img src={linkedinIcon} alt="" />
                         </div>
                     </a>
                 </div>

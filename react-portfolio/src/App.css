@@ -38,7 +38,7 @@ section {
 }
 
 .custom-shape-divider-top-1632964461 .shape-fill {
-  fill: #724E91;
+  fill: #9B59B6;
 }
 
 .custom-shape-divider-bottom-1632964777 {
@@ -59,7 +59,7 @@ section {
 }
 
 .custom-shape-divider-bottom-1632964777 .shape-fill {
-  fill: #724E91;
+  fill: #9B59B6;
 }
 
 /* Header Section */
@@ -95,7 +95,7 @@ section {
 .photoWrap img {
   height: 100%;
   width: 100%;
-  border: 4px solid #724E91;
+  border: 4px solid #9B59B6;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -172,7 +172,7 @@ section {
   width: 225px;
   height: 225px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px;
+  /* perspective: 1000px; */
 }
 
 .flip-card img {
@@ -211,7 +211,7 @@ section {
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #a065b8;
   color: white;
   transform: rotateY(180deg);
 }
@@ -226,6 +226,11 @@ section {
     width: 325px;
     height: 325px;
   }
+
+  .flip-card img {
+    width: 325px;
+    height: 325px;
+  }
 }
 
 /* Contact Section */
@@ -237,12 +242,12 @@ section {
 }
 
 .contactItem {
-  background: #724E91;
+  background: #9B59B6;
   padding: 1vw;  
 }
 
 .contactItem:hover {
-  background: #806499;
+  background: #a065b8;
   padding: 1vw;
   
 }
@@ -250,6 +255,12 @@ section {
 .contactItem a {
   text-decoration: none;
   color: white;
+}
+
+
+.contactItem img {
+  max-width: 7vmin;
+  max-height: 7vmin;
 }
 
 .custom-shape-divider-bottom-1632964970 {
@@ -270,5 +281,5 @@ section {
 }
 
 .custom-shape-divider-bottom-1632964970 .shape-fill {
-  fill: #724E91;
+  fill: #9B59B6;
 }
