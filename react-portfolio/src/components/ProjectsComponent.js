@@ -13,11 +13,6 @@ export default function About() {
                 <img src="https://via.placeholder.com/280x195" />                 
             </div>
 
-
-
-
-
-
             <div class="custom-shape-divider-top-1632964461">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <rect x="1200" height="3.6"></rect>
