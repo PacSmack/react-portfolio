@@ -1,5 +1,7 @@
 import React from 'react';
 
+import questionMark from '../assets/questionMark.png'
+
 export default function Interests() {
 
     return (
@@ -9,7 +11,7 @@ export default function Interests() {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
-                            <img src="https://via.placeholder.com/225x225" />
+                            <img src={questionMark} />
                         </div>
                         <div className="flip-card-back">
                             <h1>Spoken Languages</h1>
@@ -23,7 +25,7 @@ export default function Interests() {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
-                            <img src="https://via.placeholder.com/225x225" />
+                            <img src={questionMark} />
                         </div>
                         <div className="flip-card-back">
                             <h1>Sports</h1>
@@ -36,7 +38,7 @@ export default function Interests() {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
-                            <img src="https://via.placeholder.com/225x225" />
+                            <img src={questionMark} />
                         </div>
                         <div className="flip-card-back">
                             <h1>Entertainment</h1>

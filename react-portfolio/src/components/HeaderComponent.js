@@ -1,9 +1,9 @@
 import React from 'react';
 
 import myPhoto from '../assets/myPhoto.png'
-import githubIcon from '../assets/gitHubIcon.png'
-import emailIcon from '../assets/emailIcon.png'
-import linkedinIcon from '../assets/linkedinIcon.png'
+import githubIcon from '../assets/gitHubIconP.png'
+import emailIcon from '../assets/emailIconP.png'
+import linkedinIcon from '../assets/linkedinIconP.png'
 
 export default function Header() {
 
