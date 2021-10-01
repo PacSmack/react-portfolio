@@ -19,15 +19,15 @@ export default function Technologies() {
             <h1>Technologies</h1>
             <container className="gallery">
                 <img src={html5Icon} alt="HTML5" />
-                <img src={jsIcon} alt="HTML5" />
-                <img src={cssIcon} alt="HTML5" />
-                <img src={reactIcon} alt="HTML5" />
-                <img src={gitIcon} alt="HTML5" />
-                <img src={herokuIcon} alt="HTML5" />
-                <img src={mysqlIcon} alt="HTML5" />
-                <img src={mongoIcon} alt="HTML5" />
-                <img src={nodeIcon} alt="HTML5" />
-                <img src={bootstrapIcon} alt="HTML5" />
+                <img src={jsIcon} alt="JavaScript" />
+                <img src={cssIcon} alt="CSS" />
+                <img src={reactIcon} alt="React" />
+                <img src={gitIcon} alt="Git" />
+                <img src={herokuIcon} alt="Heroku" />
+                <img src={mysqlIcon} alt="MySql" />
+                <img src={mongoIcon} alt="MongoDB" />
+                <img src={nodeIcon} alt="NodeJs" />
+                <img src={bootstrapIcon} alt="Bootstrap" />
             </container>
 
             <div class="custom-shape-divider-top-1632964461">

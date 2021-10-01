@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+/* NavBar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9B59B6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a065b8;
+}
+
 body {
   margin: 0;
   font-family: 'Scheherazade New', serif;
