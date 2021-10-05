@@ -41,15 +41,30 @@ li img {
 
 .nav-item:last-child {
   margin-top: auto;
-  margin-bottom: 5px;
 }
 
 .nav-item {
   height: 5rem;
+  width: 100%;
+  
+}
+
+.nav-item:hover {
+  background: violet;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  transform: scale(1.08);
 }
 
 .active>.nav-item {
   background: violet;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  transform: scale(1.08);
 }
 
 .link-text {
@@ -104,7 +119,7 @@ li img {
 
 body {
   margin: 0;
-  font-family: 'Scheherazade New', serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   background: #121417;
   overflow-x: hidden;
@@ -117,6 +132,10 @@ section {
   align-items: center;
   min-height: 43vh;
   padding: 70px 20vw;
+}
+
+section .contact {
+  min-height: 47vh;
 }
 
 /* Page Marks */
@@ -269,16 +288,16 @@ section {
 
 .flip-card {
   background-color: transparent;
-  width: 225px;
-  height: 225px;
+  width: 275px;
+  height: 275px;
   border: 1px solid #f1f1f1;
   /* perspective: 1000px; */
 }
 
 .flip-card img {
   background-color: transparent;
-  width: 225px;
-  height: 225px;
+  width: 275px;
+  height: 275px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
@@ -338,11 +357,31 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 00.6vw;
+  position: relative;
+  height: 100%;
 }
 
 .contactItem {
   background: #9B59B6;
   padding: 1vw;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.contactItem:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.centered-div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
 .contactItem:hover {
@@ -350,7 +389,25 @@ section {
   padding: 1vw;
 }
 
-.contactItem a {
+ul a {
+  width: 100%;
+}
+
+.last-phrase h1 {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.last-phrase h2 {
+  float: right;
+  font-style: italic;
+}
+
+#contact {
+  min-height: 78vh;
+}
+
+a {
   text-decoration: none;
   color: white;
 }
@@ -358,6 +415,24 @@ section {
 .contactItem img {
   max-width: 7vmin;
   max-height: 7vmin;
+}
+
+@media (max-width: 950px) {
+  .contactWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 00.6vw;
+  }
+  .contactItem {
+    background: #9B59B6;
+    padding: 1vw;
+    width: 350px;
+    height: 350px;
+  }
+  .contactItem img {
+    max-width: 14vmin;
+    max-height: 14vmin;
+  }
 }
 
 .custom-shape-divider-bottom-1632964970 {
