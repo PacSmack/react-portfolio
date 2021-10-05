@@ -8,9 +8,9 @@ export default function About() {
             <h1>Projects</h1>
 
             <div className="projectImgWrapper">
-                <img src="https://via.placeholder.com/280x195" alt="" /> 
-                <img src="https://via.placeholder.com/280x195" alt=""/> 
-                <img src="https://via.placeholder.com/280x195" alt=""/>                 
+                <img src="https://via.placeholder.com/300x240" alt="" /> 
+                <img src="https://via.placeholder.com/300x240" alt="" /> 
+                <img src="https://via.placeholder.com/300x240" alt="" /> 
             </div>
 
             <div class="custom-shape-divider-top-1632964461">

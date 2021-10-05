@@ -8,6 +8,7 @@ html {
 
 .main {
   margin-left: 5rem;
+
 }
 
 /* NavBar */
@@ -55,16 +56,17 @@ li img {
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 .active>.nav-item {
+  z-index: 999;
   background: violet;
   -moz-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .link-text {
@@ -80,8 +82,47 @@ li img {
   text-decoration: none;
 }
 
+.scroll-to-top img {
+  width: 2.7rem;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    z-index: 9999;
+    background-color: #121417;
+    padding-bottom: 3px;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  .main {
+    margin-left: 5rem;    
+  }
+
+  .scroll-to-top img {
+    width: 3rem;
+    height: auto;
+  }
+} 
+
 .scroll-to-top {
   animation: scrollTop 0.7s alternate ease infinite;
+}
+
+.scroll-to-top img {
+  width: 2.7rem;
+  height: auto;
 }
 
 @keyframes scrollTop {
