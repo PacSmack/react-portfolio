@@ -15,7 +15,7 @@ import bootstrapIcon from '../assets/TechIcons/bootstrap.png';
 export default function Technologies() {
 
     return (
-        <section className="technologies">
+        <section className="technologies" id="tech">
             <h1>Technologies</h1>
             <container className="gallery">
                 <img src={html5Icon} alt="HTML5" />

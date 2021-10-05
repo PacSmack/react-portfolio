@@ -5,7 +5,7 @@ import questionMark from '../assets/questionMark.png'
 export default function Interests() {
 
     return (
-        <section className="interests">
+        <section className="interests" id="interests">
             <h1>Interests</h1>
             <container className="cardsContainer">
                 <div className="flip-card">

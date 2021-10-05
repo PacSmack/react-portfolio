@@ -6,10 +6,10 @@ import resumeIcon from '../assets/resume.png';
 import resumePdf from '../assets/Resume.pdf';
 
 export default function Contact() {
-
+    
 
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <h1>Let's Connect!</h1>
 
             <div className="contactWrapper">

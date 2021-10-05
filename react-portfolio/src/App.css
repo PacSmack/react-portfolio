@@ -2,22 +2,102 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  margin-left: 5rem;
+}
+
 /* NavBar */
+
+li img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+}
+
+.navbar-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.nav-item {
+  height: 5rem;
+}
+
+.active>.nav-item {
+  background: violet;
+}
+
+.link-text {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.scroll-to-top {
+  animation: scrollTop 0.7s alternate ease infinite;
+}
+
+@keyframes scrollTop {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 /* Track */
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #9B59B6;
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #a065b8;
 }
@@ -246,7 +326,6 @@ section {
     width: 325px;
     height: 325px;
   }
-
   .flip-card img {
     width: 325px;
     height: 325px;
@@ -263,20 +342,18 @@ section {
 
 .contactItem {
   background: #9B59B6;
-  padding: 1vw;  
+  padding: 1vw;
 }
 
 .contactItem:hover {
   background: #a065b8;
   padding: 1vw;
-  
 }
 
 .contactItem a {
   text-decoration: none;
   color: white;
 }
-
 
 .contactItem img {
   max-width: 7vmin;
