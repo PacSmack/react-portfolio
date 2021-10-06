@@ -18,9 +18,16 @@ export default function Header() {
                 <a href="mailto: nathandsbr@gmail.com" target="_blank"><img src={emailIcon} alt="" /></a>
             </div>
 
-            <h1>Hello, my name is Nathan da Silva.<br />
-                I am a Full-Stack Web Developer living in Mesa, AZ.
-            </h1>
+
+            <div class="typing-container">
+                <span id="sentence" class="sentence"></span>
+                <span class="input-cursor"></span>
+            </div>
+
+
+            {/* <h1 id="typing">Hello, my name is Nathan da Silva.<br />
+                I am a <span>Full-Stack Web Developer</span> living in Mesa, AZ.<div id="crow">|</div>
+            </h1> */}
 
             <div class="custom-shape-divider-bottom-1632964777">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

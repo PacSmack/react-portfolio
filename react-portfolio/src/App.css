@@ -8,7 +8,6 @@ html {
 
 .main {
   margin-left: 5rem;
-
 }
 
 /* NavBar */
@@ -47,7 +46,6 @@ li img {
 .nav-item {
   height: 5rem;
   width: 100%;
-  
 }
 
 .nav-item:hover {
@@ -96,25 +94,21 @@ li img {
     background-color: #121417;
     padding-bottom: 3px;
   }
-
   .navbar-nav {
     flex-direction: row;
     height: 100%;
   }
-
   .nav-link {
     justify-content: center;
   }
-
   .main {
-    margin-left: 5rem;    
+    margin-left: 5rem;
   }
-
   .scroll-to-top img {
     width: 3rem;
     height: auto;
   }
-} 
+}
 
 .scroll-to-top {
   animation: scrollTop 0.7s alternate ease infinite;
@@ -495,4 +489,27 @@ a {
 
 .custom-shape-divider-bottom-1632964970 .shape-fill {
   fill: #9B59B6;
+}
+
+/* Animations */
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink .6s linear infinite alternate;
+}
+
+
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
 }
