@@ -438,6 +438,11 @@ ul a {
   font-style: italic;
 }
 
+.last-phrase {
+  position: absolute;
+  bottom: 6vh;
+}
+
 #contact {
   min-height: 78vh;
 }
@@ -492,24 +497,31 @@ a {
 }
 
 /* Animations */
+.stackText {
+  color: #9B59B6;
+}
+
 .typing-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .input-cursor {
   display: inline-block;
   width: 2px;
-  height: 42px;
+  height: 1.7rem;
   background-color: white;
   margin-left: 8px;
-  animation: blink .6s linear infinite alternate;
 }
-
 
 @keyframes blink {
   0% {opacity: 1;}
   40% {opacity: 1;}
   60% {opacity: 0;}
   100% {opacity: 0;}
+}
+
+.input-cursor { 
+animation: blink .6s linear infinite alternate;
 }

@@ -17,7 +17,7 @@ export default function Technologies() {
     return (
         <section className="technologies" id="tech">
             <h1>Technologies</h1>
-            <container className="gallery">
+            <div className="gallery">
                 <img src={html5Icon} alt="HTML5" />
                 <img src={jsIcon} alt="JavaScript" />
                 <img src={cssIcon} alt="CSS" />
@@ -28,7 +28,7 @@ export default function Technologies() {
                 <img src={mongoIcon} alt="MongoDB" />
                 <img src={nodeIcon} alt="NodeJs" />
                 <img src={bootstrapIcon} alt="Bootstrap" />
-            </container>
+            </div>
 
             <div class="custom-shape-divider-top-1632964461">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

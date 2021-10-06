@@ -7,7 +7,7 @@ export default function Interests() {
     return (
         <section className="interests" id="interests">
             <h1>Interests</h1>
-            <container className="cardsContainer">
+            <div className="cardsContainer">
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
@@ -47,7 +47,7 @@ export default function Interests() {
                         </div>
                     </div>
                 </div>                
-            </container>
+            </div>
 
             <div class="custom-shape-divider-top-1632964461">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

@@ -5,6 +5,9 @@ import githubIcon from '../assets/gitHubIconP.png'
 import emailIcon from '../assets/emailIconP.png'
 import linkedinIcon from '../assets/linkedinIconP.png'
 
+import Typing from 'react-typing-animation';
+
+
 export default function Header() {
 
     return (
@@ -16,19 +19,18 @@ export default function Header() {
                 <a href="https://www.linkedin.com/in/nathan-dias-silva/" target="_blank"><img src={linkedinIcon} alt="" /></a>
                 <a href="https://github.com/PacSmack" target="_blank"><img src={githubIcon} alt="" /></a>
                 <a href="mailto: nathandsbr@gmail.com" target="_blank"><img src={emailIcon} alt="" /></a>
-            </div>
+            </div>           
 
-
-            <div class="typing-container">
-                <span id="sentence" class="sentence"></span>
-                <span class="input-cursor"></span>
-            </div>
-
-
-            {/* <h1 id="typing">Hello, my name is Nathan da Silva.<br />
-                I am a <span>Full-Stack Web Developer</span> living in Mesa, AZ.<div id="crow">|</div>
-            </h1> */}
-
+            <Typing
+                speed={70}  
+                hideCursor={true}              
+            >
+                <h1 id="typing">Hello, my name is Nathan da Silva.<br />
+                    I am a <span className="stackText">Full-Stack Web Developer</span> living in Mesa, AZ.
+                    <span className="input-cursor"> </span>
+                </h1>
+            </Typing>
+            
             <div class="custom-shape-divider-bottom-1632964777">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <rect x="1200" height="3.6"></rect>
