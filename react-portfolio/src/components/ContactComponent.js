@@ -1,4 +1,4 @@
-import emailIcon from '../assets/emailIcon.png'
+import emailIcon from '../assets/emailIcon.png';
 
 import linkedinIcon from '../assets/linkedinIcon.png';
 import resumeIcon from '../assets/resume.png';

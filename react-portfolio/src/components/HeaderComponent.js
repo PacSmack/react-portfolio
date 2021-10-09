@@ -16,17 +16,17 @@ export default function Header() {
     }, [])
     return (
         <section className="header">
-            <div data-aos="fade-up"  className="photoWrap">
+            <div data-aos="slide-down"  className="photoWrap">
                 <img src={myPhoto} alt="" />
             </div>
-            <div data-aos="fade-up"   className="iconsWrapper">
+            <div data-aos="slide-up"  className="iconsWrapper">
                 <a href="https://www.linkedin.com/in/nathan-dias-silva/" target="_blank"><img src={linkedinIcon} alt="" /></a>
                 <a href="https://github.com/PacSmack" target="_blank"><img src={githubIcon} alt="" /></a>
                 <a href="mailto: nathandsbr@gmail.com" target="_blank"><img src={emailIcon} alt="" /></a>
             </div>
 
             <Typing
-                speed={70}
+                speed={45}
                 hideCursor={true}
                 startDelay={1750}
             >
