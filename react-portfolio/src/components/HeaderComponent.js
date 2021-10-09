@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 import myPhoto from '../assets/myPhoto.png'
 import githubIcon from '../assets/gitHubIconP.png'
