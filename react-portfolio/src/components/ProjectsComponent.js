@@ -5,7 +5,7 @@ export default function About() {
 
     return (
         <section className="projects" id="projects">
-            <h1>Projects</h1>
+            <h1 className="title">Projects</h1>
 
             <div className="projectImgWrapper">
                 <img src="https://via.placeholder.com/300x240" alt="" /> 

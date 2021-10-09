@@ -6,7 +6,7 @@ export default function Interests() {
 
     return (
         <section className="interests" id="interests">
-            <h1>Interests</h1>
+            <h1 className="title">Interests</h1>
             <div className="cardsContainer">
                 <div className="flip-card">
                     <div className="flip-card-inner">

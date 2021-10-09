@@ -10,7 +10,7 @@ export default function Contact() {
 
     return (
         <section className="contact" id="contact">
-            <h1>Let's Connect!</h1>
+            <h1 className="title">Let's Connect!</h1>
 
             <div className="contactWrapper">
                 <a href="mailto: nathandsbr@gmail.com" target="_blank">
@@ -23,6 +23,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </a>
+                
 
                 <a href={resumePdf} target="_blank">
                     <div className="contactItem">

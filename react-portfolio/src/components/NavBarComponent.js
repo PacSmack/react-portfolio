@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import Aos from 'aos';
+import "aos/dist/aos.css"
+
 
 import aboutIcon from '../assets/NavBar/about.png';
 import techIcon from '../assets/NavBar/tech.png';
@@ -7,17 +11,19 @@ import interestsIcon from '../assets/NavBar/interests.png';
 import contactIcon from '../assets/NavBar/contact.png';
 import scrollIcon from '../assets/NavBar/scroll.png';
 
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 
 export default function NavBar() {
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" })
 
-
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, [])
 
 
     return (
-        <nav className="navbar">
+        <nav data-aos="fade-right" className="navbar">
 
             <ul className="navbar-nav">
 

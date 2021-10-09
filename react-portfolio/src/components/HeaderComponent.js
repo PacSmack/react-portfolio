@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 import myPhoto from '../assets/myPhoto.png'
 import githubIcon from '../assets/gitHubIconP.png'
@@ -9,28 +11,31 @@ import Typing from 'react-typing-animation';
 
 
 export default function Header() {
-
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    }, [])
     return (
         <section className="header">
-            <div className="photoWrap">
+            <div data-aos="fade-up"  className="photoWrap">
                 <img src={myPhoto} alt="" />
             </div>
-            <div className="iconsWrapper">
+            <div data-aos="fade-up"   className="iconsWrapper">
                 <a href="https://www.linkedin.com/in/nathan-dias-silva/" target="_blank"><img src={linkedinIcon} alt="" /></a>
                 <a href="https://github.com/PacSmack" target="_blank"><img src={githubIcon} alt="" /></a>
                 <a href="mailto: nathandsbr@gmail.com" target="_blank"><img src={emailIcon} alt="" /></a>
-            </div>           
+            </div>
 
             <Typing
-                speed={70}  
-                hideCursor={true}              
+                speed={70}
+                hideCursor={true}
+                startDelay={1750}
             >
                 <h1 id="typing">Hello, my name is Nathan da Silva.<br />
                     I am a <span className="stackText">Full-Stack Web Developer</span> living in Mesa, AZ.
                     <span className="input-cursor"> </span>
                 </h1>
             </Typing>
-            
+
             <div class="custom-shape-divider-bottom-1632964777">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <rect x="1200" height="3.6"></rect>

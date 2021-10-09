@@ -16,7 +16,7 @@ export default function Technologies() {
 
     return (
         <section className="technologies" id="tech">
-            <h1>Technologies</h1>
+            <h1 className="title">Technologies</h1>
             <div className="gallery">
                 <img src={html5Icon} alt="HTML5" />
                 <img src={jsIcon} alt="JavaScript" />
