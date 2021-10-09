@@ -12,14 +12,14 @@ import Typing from 'react-typing-animation';
 
 export default function Header() {
     useEffect(() => {
-        Aos.init({duration: 1500});
+        Aos.init({ duration: 1500 });
     }, [])
     return (
         <section className="header">
-            <div data-aos="slide-down"  className="photoWrap">
+            <div data-aos="slide-down" data-aos-once="true" className="photoWrap">
                 <img src={myPhoto} alt="" />
             </div>
-            <div data-aos="slide-up"  className="iconsWrapper">
+            <div data-aos="slide-up" data-aos-once="true" className="iconsWrapper">
                 <a href="https://www.linkedin.com/in/nathan-dias-silva/" target="_blank"><img src={linkedinIcon} alt="" /></a>
                 <a href="https://github.com/PacSmack" target="_blank"><img src={githubIcon} alt="" /></a>
                 <a href="mailto: nathandsbr@gmail.com" target="_blank"><img src={emailIcon} alt="" /></a>

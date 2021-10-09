@@ -23,10 +23,8 @@ export default function NavBar() {
 
 
     return (
-        <nav data-aos="fade-right" className="navbar">
-
+        <nav data-aos="fade-right" data-aos-once="true" className="navbar">
             <ul className="navbar-nav">
-
                 <Link
                     activeClass="active"
                     to="about"

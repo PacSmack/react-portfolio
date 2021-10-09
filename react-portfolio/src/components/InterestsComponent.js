@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
+import Aos from 'aos';
+import "aos/dist/aos.css"
 import questionMark from '../assets/questionMark.png'
 
 export default function Interests() {
+    useEffect(() => {
+        Aos.init({ duration: 1250 });
+    }, [])
 
     return (
         <section className="interests" id="interests">
-            <h1 className="title">Interests</h1>
-            <div className="cardsContainer">
+            <h1 data-aos="flip-down" data-aos-once="true" className="title">Interests</h1>
+            <div data-aos="flip-down" data-aos-once="true" className="cardsContainer">
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
@@ -30,7 +35,7 @@ export default function Interests() {
                         <div className="flip-card-back">
                             <h1>Sports</h1>
                             <p>Volleyball</p>
-                            <p>Soccer</p>                            
+                            <p>Soccer</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +51,7 @@ export default function Interests() {
                             <p>Music Concerts</p>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="custom-shape-divider-top-1632964461">

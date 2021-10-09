@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 
 export default function About() {
-
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, [])
     return (
-        <section className="projects" id="projects">
-            <h1 className="title">Projects</h1>
+        <section id="projects">
+            <h1 data-aos="flip-up" data-aos-once="true" className="title">Projects</h1>
 
-            <div className="projectImgWrapper">
-                <img src="https://via.placeholder.com/300x240" alt="" /> 
-                <img src="https://via.placeholder.com/300x240" alt="" /> 
-                <img src="https://via.placeholder.com/300x240" alt="" /> 
+            <div data-aos="flip-up" data-aos-once="true" className="projects" className="projectImgWrapper">
+                <img src="https://via.placeholder.com/300x240" alt="" />
+                <img src="https://via.placeholder.com/300x240" alt="" />
+                <img src="https://via.placeholder.com/300x240" alt="" />
             </div>
 
             <div class="custom-shape-divider-top-1632964461">

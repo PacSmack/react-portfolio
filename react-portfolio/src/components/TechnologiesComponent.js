@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import html5Icon from '../assets/TechIcons/html5.png';
 import jsIcon from '../assets/TechIcons/js.png';
@@ -13,11 +16,13 @@ import bootstrapIcon from '../assets/TechIcons/bootstrap.png';
 
 
 export default function Technologies() {
-
+    useEffect(() => {
+        Aos.init({ duration: 1250 });
+    }, [])
     return (
         <section className="technologies" id="tech">
-            <h1 className="title">Technologies</h1>
-            <div className="gallery">
+            <h1 className="title" data-aos="fade-right" data-aos-once="true" >Technologies</h1>
+            <div className="gallery" data-aos="fade-left" data-aos-once="true"  >
                 <img src={html5Icon} alt="HTML5" />
                 <img src={jsIcon} alt="JavaScript" />
                 <img src={cssIcon} alt="CSS" />

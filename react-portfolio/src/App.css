@@ -297,6 +297,10 @@ section .contact {
   grid-gap: 0.6vw;
 }
 
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
 .gallery img {
   width: 100%;
   height: 100%;
@@ -445,6 +449,13 @@ ul a {
 .last-phrase {
   position: absolute;
   bottom: 6vh;
+}
+
+@media (max-width: 950px) {
+  .last-phrase {
+    position: relative;
+    bottom: auto;
+  }
 }
 
 #contact {
