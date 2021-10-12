@@ -362,8 +362,12 @@ section .contact {
 }
 
 @media (max-width: 900px) {
-  .image-container img {
+  .wrapProjectGif .image-container img {
     width: 50vw;
+  }
+
+  .wrapProjectGif .image-caption img {
+    width: 3rem
   }
 }
 
