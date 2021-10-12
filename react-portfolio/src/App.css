@@ -10,6 +10,28 @@ html {
   margin-left: 5rem;
 }
 
+@media (max-width: 900px) {
+  .main {
+    margin-left: auto!important;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .title {
   border-bottom: 0.2rem solid #9B59B6;
 }
@@ -58,7 +80,6 @@ li img {
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  transform: scale(1.02);
 }
 
 .active>.nav-item {
@@ -68,7 +89,6 @@ li img {
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  transform: scale(1.05);
 }
 
 .link-text {
@@ -171,6 +191,19 @@ section {
   align-items: center;
   min-height: 43vh;
   padding: 70px 20vw;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 section .contact {
@@ -261,14 +294,59 @@ section .contact {
 
 /* About section */
 
-.about {
-  background: #121417;
+/* .about {
+  background: #9B59B6;
+} */
+
+.about p {
+  font-size: 1.6rem;
 }
 
 /* Projects Section */
 
 .projects {
   background: #121417;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 30vw;
+}
+
+.image-caption {
+  width: 100%;
+  height: 100%;
+  background: rgb(18, 20, 23, 0.5);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.image-caption img {
+  width: 3rem;
+  height: auto;
+}
+
+.image-caption a {
+  background: #9B59B6;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.image-container:hover .image-caption {
+  opacity: 1;
 }
 
 .projectImgWrapper {
@@ -280,16 +358,16 @@ section .contact {
 }
 
 @media (max-width: 900px) {
-  .projectImgWrapper {
-    display: contents;
+  .image-container img {
+    width: 50vw;
   }
 }
 
 /* Technologies Section */
 
-.technologies {
-  background: #121417;
-}
+/* .technologies {
+  background: #9B59B6;
+} */
 
 .gallery {
   display: grid;
@@ -297,9 +375,9 @@ section .contact {
   grid-gap: 0.6vw;
 }
 
-.gallery img:hover {
+/* .gallery img:hover {
   transform: scale(1.02);
-}
+} */
 
 .gallery img {
   width: 100%;
@@ -512,6 +590,7 @@ a {
 }
 
 /* Animations */
+
 .stackText {
   color: #9B59B6;
 }
@@ -531,12 +610,20 @@ a {
 }
 
 @keyframes blink {
-  0% {opacity: 1;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.input-cursor { 
-animation: blink .6s linear infinite alternate;
+.input-cursor {
+  animation: blink .6s linear infinite alternate;
 }

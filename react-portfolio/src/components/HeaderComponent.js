@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 import myPhoto from '../assets/myPhoto.png'
 import githubIcon from '../assets/gitHubIconP.png'
@@ -15,7 +15,7 @@ export default function Header() {
         Aos.init({ duration: 1500 });
     }, [])
     return (
-        <section className="header">
+        <section className="header noselect">
             <div data-aos="slide-down" data-aos-once="true" className="photoWrap">
                 <img src={myPhoto} alt="" />
             </div>
