@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-<<<<<<< HEAD
 import githubIcon from '../assets/gitHubIcon.png';
 
 import artinerary from '../assets/Projects/Artinerary/ArtInerary.gif';
 import duoLOL from '../assets/Projects/cupid/cupid.gif';
 import using from '../assets/Projects/uSing/using.gif';
 
-=======
-import githubIcon from '../assets/gitHubIcon.png'
->>>>>>> 1888e4068a916d8512bb51d4c05a5103d5840453
 
 import Aos from 'aos';
 import "aos/dist/aos.css"
@@ -24,7 +20,6 @@ export default function About() {
             <h1 data-aos="flip-up" data-aos-once="true" className="title">Projects</h1>
 
             <div data-aos="flip-up" data-aos-once="true" className="projects" className="projectImgWrapper">
-<<<<<<< HEAD
                 <div className="wrapProjectGif">
                     <div className="image-container">
                         <img src={duoLOL} alt="" />
@@ -45,35 +40,11 @@ export default function About() {
                         <div className="image-caption">
                             <a href="https://github.com/PacSmack/uSing" target="_blank"><img src={githubIcon} alt="" /></a>
                         </div>
-=======
-                <div className="image-container">
-                    <img src="https://via.placeholder.com/300x240" alt="" />
-                    <div className="image-caption">
-                        <a href="https://github.com/PacSmack/duoLOL" target="_blank"><img src={githubIcon} alt="" /></a>
-                    </div>
-                </div>
-
-                <div className="image-container">
-                    <img src="https://via.placeholder.com/300x240" alt="" />
-                    <div className="image-caption">
-                        <a href="https://github.com/PacSmack/ArtInerary" target="_blank"><img src={githubIcon} alt="" /></a>
-                    </div>
-                </div>
-
-                <div className="image-container">
-                    <img src="https://via.placeholder.com/300x240" alt="" />
-                    <div className="image-caption">
-                        <a href="https://github.com/PacSmack/uSing" target="_blank"><img src={githubIcon} alt="" /></a>
->>>>>>> 1888e4068a916d8512bb51d4c05a5103d5840453
                     </div>
                 </div>
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1888e4068a916d8512bb51d4c05a5103d5840453
             </div>
 
             <div class="custom-shape-divider-top-1632964461">
