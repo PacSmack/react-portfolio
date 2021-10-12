@@ -302,6 +302,10 @@ section .contact {
   font-size: 1.6rem;
 }
 
+.about p {
+  font-size: 1.6rem;
+}
+
 /* Projects Section */
 
 .projects {
@@ -312,10 +316,13 @@ section .contact {
   position: relative;
 }
 
+<<<<<<< HEAD
 .image-container img {
   width: 30vw;
 }
 
+=======
+>>>>>>> 1888e4068a916d8512bb51d4c05a5103d5840453
 .image-caption {
   width: 100%;
   height: 100%;
