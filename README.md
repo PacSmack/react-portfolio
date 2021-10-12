@@ -1,3 +1,3 @@
-# react-portfolio test
+# react-portfolio
 
 https://pacsmack.github.io/react-portfolio/
