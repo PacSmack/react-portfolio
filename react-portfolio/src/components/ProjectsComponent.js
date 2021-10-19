@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import githubIcon from '../assets/gitHubIcon.png';
+import externalLink from '../assets/externalLink.png';
 
 import artinerary from '../assets/Projects/Artinerary/ArtInerary.gif';
 import duoLOL from '../assets/Projects/cupid/cupid.gif';
@@ -22,23 +23,33 @@ export default function About() {
             <div data-aos="flip-up" data-aos-once="true" className="projects" className="projectImgWrapper">
                 <div className="wrapProjectGif">
                     <div className="image-container">
-                        <img src={duoLOL} alt="" />
+                        <img className="projectImg" src={duoLOL} alt="" />
                         <div className="image-caption">
                             <a href="https://github.com/PacSmack/duoLOL" target="_blank"><img src={githubIcon} alt="" /></a>
                         </div>
-                    </div>
-
-                    <div className="image-container">
-                        <img src={artinerary} alt="" />
-                        <div className="image-caption">
-                            <a href="https://github.com/PacSmack/ArtInerary" target="_blank"><img src={githubIcon} alt="" /></a>
+                        <div className="bottomBtn">
+                            <a href="https://duolol.herokuapp.com/" target="_blank"><img className="imgExt" src={externalLink} alt="" /></a>
                         </div>
                     </div>
 
                     <div className="image-container">
-                        <img src={using} alt="" />
+                        <img className="projectImg" src={artinerary} alt="" />
+                        <div className="image-caption">
+                            <a href="https://github.com/PacSmack/ArtInerary" target="_blank"><img src={githubIcon} alt="" /></a>
+                        </div>
+
+                        <div className="bottomBtn">
+                            <a href="https://hidden-reaches-45405.herokuapp.com/" target="_blank"><img className="imgExt" src={externalLink} alt="" /></a>
+                        </div>
+                    </div>
+
+                    <div className="image-container">
+                        <img className="projectImg" src={using} alt="" />
                         <div className="image-caption">
                             <a href="https://github.com/PacSmack/uSing" target="_blank"><img src={githubIcon} alt="" /></a>
+                        </div>
+                        <div className="bottomBtn">
+                            <a href="https://jbryant4.github.io/uSing/" target="_blank"><img className="imgExt" src={externalLink} alt="" /></a>
                         </div>
                     </div>
                 </div>

@@ -316,7 +316,7 @@ section .contact {
   position: relative;
 }
 
-.image-container img {
+.image-container .projectImg {
   width: 30vw;
 }
 
@@ -349,12 +349,38 @@ section .contact {
   transform: translate(-50%, -50%)
 }
 
+.imgExt {
+  opacity: 0;
+  width: 1.5rem;
+  background: #9B59B6;
+  padding: 0.25rem;
+  border-radius: 10%;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.image-container:hover .imgExt {
+  opacity: 1;
+}
+
 .image-container:hover .image-caption {
   opacity: 1;
 }
 
 .projectImgWrapper {
   display: flex;
+}
+
+.bottomBtn {
+  position: absolute;
+  bottom: 1.5rem;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
 .projectImgWrapper img {
@@ -365,7 +391,6 @@ section .contact {
   .wrapProjectGif .image-container img {
     width: 50vw;
   }
-
   .wrapProjectGif .image-caption img {
     width: 3rem
   }
